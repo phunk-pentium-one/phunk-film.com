@@ -1,0 +1,255 @@
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 7%;
+  border-bottom: 3px solid #ff0000;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+.navbar .navbar-logo img {
+  height: 40px;
+  width: auto;
+}
+.navbar .navbar-logo span {
+  color: #ff0000;
+}
+.navbar .navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 15px;
+}
+.navbar .navbar-nav a:hover {
+  color: #ff0000;
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+.navbar .navbar-extra a:hover {
+  color: #ff0000;
+}
+
+/* Tempel di baris paling bawah navbar.css */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 4%;
+  }
+  .navbar .navbar-logo {
+    font-size: 1.4rem;
+  }
+  .navbar .navbar-logo img {
+    height: 30px;
+  }
+  .navbar .navbar-nav {
+    display: none; /* Menyembunyikan menu teks di HP */
+  }
+}
+
+/* Mengatur posisi kontainer di pojok kanan atas */
+.auth-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Jarak antara tombol login dan register */
+}
+
+/* Gaya dasar untuk kedua tombol */
+.btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+/* Gaya khusus tombol Login (Desain Minimalis/Outline) */
+.btn-login {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    background-color: transparent;
+}
+
+.btn-login:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Gaya khusus tombol Register (Desain Solid/Mencolok) */
+.btn-register {
+    color: white;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.btn-register:hover {
+    background-color: #b30000;
+}
+
+/* Mengatur posisi kontainer di pojok kanan atas */
+.auth-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Jarak antara tombol login dan register */
+}
+
+/* Gaya dasar untuk kedua tombol */
+.btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+/* Gaya khusus tombol Login (Desain Minimalis/Outline) */
+.btn-login {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    background-color: transparent;
+}
+
+.btn-login:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Gaya khusus tombol Register (Desain Solid/Mencolok) */
+.btn-register {
+    color: white;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.btn-register:hover {
+    background-color: #b30000;
+}
+
+/* ==========================================================================
+   STYLING UNTUK POP-UP MODAL REGISTRASI
+   ========================================================================== */
+
+/* Wadah Utama Pop-up (Overlay Gelap) */
+.modal {
+    display: none; 
+    position: fixed; 
+    /* Nilai z-index dibuat tinggi (1001) agar pop-up berada di atas navbar */
+    z-index: 1001; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    align-items: center;
+    justify-content: center;
+}
+
+/* Kotak Konten Formulir */
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 350px;
+    color: #333333;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInModal 0.3s ease-out; /* Animasi pop-up muncul halus */
+}
+
+/* Tombol Tutup (Silang) */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Judul Formulir */
+.modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Pembungkus Input */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Input Teks, Email, dan Password */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Tombol Kirim / Daftar */
+.submit-btn {
+    width: 100%;
+    padding: 11px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Efek Tambahan untuk Tombol Register di Navbar */
+.btn-register {
+    cursor: pointer;
+}
+
+/* Animasi Muncul Halus */
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

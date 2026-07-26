@@ -1,0 +1,85 @@
+/* ==========================================================================
+   STYLING LAYER 4: SEKSI KONTAK / MEDIA SOSIAL
+   ========================================================================== */
+
+.layer-empat .contact-section {
+    padding: 60px 7%;
+    background-color: #422121; 
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.layer-empat .contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.layer-empat .contact-container h2 span {
+    color: #ff0000; 
+}
+
+.layer-empat .contact-container p {
+    color: #aaa;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+/* Bungkus Utama Kotak Media Sosial */
+.layer-empat .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Gaya Kotak Setiap Media Sosial */
+.layer-empat .social-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #1f2833;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    min-width: 150px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+/* PERBAIKAN TYPO: Menggunakan huruf i (ikon), bukan huruf l */
+.layer-empat .social-box i {
+    font-size: 1.6rem;
+}
+
+/* Efek Hover Warna Aplikasi */
+.layer-empat .social-box.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    transform: translateY(-5px);
+}
+
+.layer-empat .social-box.whatsapp:hover {
+    background-color: #25d366;
+    transform: translateY(-5px);
+}
+
+.layer-empat .social-box.facebook:hover {
+    background-color: #ff0000;
+    transform: translateY(-5px);
+}
+
+.layer-empat .social-box.tiktok:hover {
+    background-color: #000000;
+    border: 1px solid #fe2c55;
+    transform: translateY(-5px);
+}
+
+.layer-empat .social-box.twitter-x:hover {
+    background-color: #111111;
+    transform: translateY(-5px);
+}
