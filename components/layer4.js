@@ -16,7 +16,7 @@ class LayerEmpatComponent extends HTMLElement {
             
             <div class="social-medias">
               <!-- Instagram -->
-              <a href="https://instagram.com" target="_blank" class="social-box instagram">
+              <a href="https://www.instagram.com/phunk_olhor/" target="_blank" class="social-box instagram">
                 <i class="fa-brands fa-instagram"></i>
                 <span>Instagram</span>
               </a>
@@ -28,19 +28,19 @@ class LayerEmpatComponent extends HTMLElement {
               </a>
 
               <!-- Facebook -->
-              <a href="https://facebook.com" target="_blank" class="social-box facebook">
+              <a href="https://www.facebook.com/phunkolor" target="_blank" class="social-box facebook">
                 <i class="fa-brands fa-facebook-f"></i>
                 <span>Facebook</span>
               </a>
 
               <!-- TikTok -->
-              <a href="https://tiktok.com" target="_blank" class="social-box tiktok">
+              <a href="https://www.tiktok.com/" target="_blank" class="social-box tiktok">
                 <i class="fa-brands fa-tiktok"></i>
                 <span>TikTok</span>
               </a>
 
               <!-- Twitter / X -->
-              <a href="https://x.com" target="_blank" class="social-box twitter-x">
+              <a href="https://x.com/septian396979" target="_blank" class="social-box twitter-x">
                 <i class="fa-brands fa-x-twitter"></i>
                 <span>Twitter / X</span>
               </a>
