@@ -46,18 +46,39 @@
 
 /* Tempel di baris paling bawah navbar.css */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 15px 4%;
-  }
-  .navbar .navbar-logo {
-    font-size: 1.4rem;
-  }
-  .navbar .navbar-logo img {
-    height: 30px;
-  }
-  .navbar .navbar-nav {
-    display: none; /* Menyembunyikan menu teks di HP */
-  }
+    .navbar {
+        padding: 15px 4%;
+    }
+    .navbar .navbar-logo {
+        font-size: 1.4rem;
+    }
+    .navbar .navbar-logo img {
+        height: 30px;
+    }
+    /* Menyembunyikan menu navigasi utama di HP */
+    .navbar .navbar-navbar-nav {
+        display: none; 
+    }
+    
+    /* --- TAMBAHKAN KODE INI KHUSUS UNTUK HP --- */
+    
+    /* Mengecilkan teks menu ekstra di HP (misalnya ikon/menu tambahan) */
+    .navbar .navbar-extra a {
+        font-size: 1rem; /* Ukuran default sebelumnya 1.2rem */
+        margin: 0 6px;   /* Mengurangi jarak antar ikon/teks */
+    }
+
+    /* Menyesuaikan ukuran tombol Login & Register di HP */
+    .auth-container {
+        top: 15px;
+        right: 15px;
+        gap: 6px; /* Memperkecil jarak antar tombol */
+    }
+
+    .btn {
+        padding: 6px 12px;  /* Memperkecil padding tombol */
+        font-size: 12px;    /* Mengecilkan ukuran teks tombol dari 14px */
+    }
 }
 
 /* Mengatur posisi kontainer di pojok kanan atas */
